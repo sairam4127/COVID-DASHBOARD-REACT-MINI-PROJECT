@@ -1,0 +1,55 @@
+.barcharts-container {
+  width: 100%;
+
+  /* display: flex; 
+    flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  overflow-x: auto;
+  margin-top: 30px;
+  padding: 30px;
+}
+.for-scroll {
+  width: 100%;
+  padding: 50px 0px;
+  overflow: auto;
+}
+.charts {
+  border-radius: 12px;
+  margin-bottom: 32px;
+  padding: 40px;
+  overflow-x: auto;
+  width: 100%;
+}
+.confirmed-background {
+  background-color: #331427;
+}
+.active-background {
+  background-color: #132240;
+}
+.recovered-background {
+  background-color: #182829;
+}
+.deceased-background {
+  background-color: #1c1c2b;
+}
+.tested-background {
+  background-color: #230f41;
+}
+
+.charts-title {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #cbd5e1;
+}
+
+@media (max-width: 600px) {
+  .charts {
+    width: 100%;
+  }
+  .charts-title {
+    text-align: center;
+  }
+}

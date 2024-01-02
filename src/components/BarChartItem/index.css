@@ -1,0 +1,13 @@
+.bar-chart-container {
+  width: 100%;
+  overflow-x: auto;
+
+  background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .bar-chart-container {
+    overflow-x: scroll;
+    width: 100%;
+  }
+}

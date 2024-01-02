@@ -1,0 +1,48 @@
+.search-suggestion-container {
+  width: 100%;
+}
+
+.search-suggestion {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #64748b;
+}
+
+.search-suggestion:hover {
+  border: 2px solid #94a3b8;
+}
+
+.search-suggestion-name {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 24px;
+  color: #64748b;
+}
+
+.search-button {
+  margin: 5px 0px;
+  width: 79px;
+  height: 32px;
+  background: rgba(28, 212, 212, 0.16);
+  border-radius: 4px;
+  border: none;
+  font-family: 'HK Grotesk';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #facc15;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.icon-right {
+  margin-left: 5px;
+}
+
+.search-result-link {
+  text-decoration: none;
+  width: 100%;
+}

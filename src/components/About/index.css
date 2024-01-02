@@ -1,0 +1,51 @@
+.about-bg-container {
+  background-color: #161625;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.about-content-container {
+  width: 87%;
+}
+
+@media screen and (max-width: 600px) {
+  .about-bg-container {
+    margin-top: 0px;
+  }
+  .about-content-container {
+    width: 95%;
+  }
+}
+
+.about-title {
+  font-family: Roboto;
+  font-size: 48px;
+  color: #f8fafc;
+}
+.about-last-update-time {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 24px;
+  color: #e2e8f0;
+  background-color: #94a3b8;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+.about-sub-title {
+  font-family: Roboto;
+  font-size: 26px;
+  line-height: 36px;
+  color: #e2e8f0;
+}
+.faqs-list {
+  margin-top: 32px;
+  padding: 0;
+
+  list-style-type: none;
+}

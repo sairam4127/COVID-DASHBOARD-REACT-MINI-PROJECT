@@ -1,0 +1,49 @@
+.cases-number {
+  font-family: Roboto;
+
+  font-weight: 500;
+  font-size: 24px;
+
+  color: #94a3b8;
+  margin-right: 10px;
+}
+.district-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  color: #94a3b8;
+}
+.district-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .cases-number {
+    font-size: 16px;
+  }
+  .district-name {
+    font-size: 12px;
+  }
+  .district-item {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .district-item {
+    width: 50%;
+    padding: 0px 5px;
+  }
+  .cases-number {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .district-name {
+    font-size: 12px;
+  }
+}
