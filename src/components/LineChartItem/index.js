@@ -5,7 +5,7 @@ import {
   YAxis,
   Tooltip,
   Legend,
-  ResponsiveContainer,
+  // ResponsiveContainer,
 } from 'recharts'
 
 import './index.css'
@@ -44,8 +44,10 @@ const LineChartItem = props => {
   )
 
   return (
-    <ResponsiveContainer width="100%" height={300}>
+    <>
       <LineChart
+        width={1000}
+        height={300}
         data={timeLineData}
         margin={{top: 5, right: 30, left: 20, bottom: 5}}
       >
@@ -83,7 +85,7 @@ const LineChartItem = props => {
           dot={{fill: `${colorfill}`, strokeWidth: 1}}
         />
       </LineChart>
-    </ResponsiveContainer>
+    </>
   )
 }
 

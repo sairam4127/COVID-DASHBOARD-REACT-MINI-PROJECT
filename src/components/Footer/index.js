@@ -7,15 +7,17 @@ import './index.css'
 const Footer = () => (
   <div className="footer-bg-container">
     <div className="footer-main-container">
-      <h1 className="footer-heading">
-        COVID19<span className="footer-heading-part-2 ">INDIA</span>
-      </h1>
-      <p className="footer-description">
-        we stand with everyone fighting on the front lines
-      </p>
+      <>
+        <h1 className="footer-heading">
+          COVID19<span className="footer-heading-part-2 ">INDIA</span>
+        </h1>
+        <p className="footer-description">
+          we stand with everyone fighting on the front lines
+        </p>
+      </>
       <div className="footer-icons-container">
         <a
-          href="https://github.com/SaiTejaPolisetty/covid-19Dashboard-React-Mini-Project-"
+          href="https://github.com/sairam4127/COVID-DASHBOARD-REACT-MINI-PROJECT"
           title="view code of this project"
           target="_blank"
           rel="noreferrer"

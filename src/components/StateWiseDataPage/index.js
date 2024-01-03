@@ -262,8 +262,8 @@ class StateWiseDataPage extends Component {
     const data = await response.json()
     console.log(data)
     const currentTimeData = data[stateCode]
-    /* console.log('Rahs')
-    console.log(currentTimeData) */
+    /* console.log('Rahs') */
+    console.log(currentTimeData)
   }
 
   getStateData = async () => {
@@ -310,7 +310,9 @@ class StateWiseDataPage extends Component {
   }
 
   renderLoadingView = () => (
-    <div testid="stateDetailsLoader" className=" loader-container">
+    <div //  testid="stateDetailsLoader"
+      className=" loader-container"
+    >
       <Loader type="Oval" color="#007BFF" height="50" width="50" />
     </div>
   )
@@ -357,7 +359,7 @@ class StateWiseDataPage extends Component {
     return (
       <ul
         className="district-wise-cases-list"
-        testid="topDistrictsUnorderedList"
+        // testid="topDistrictsUnorderedList"
       >
         {requiredCaseDetails.map(obj => (
           <DistrictCasesItem districtData={obj} key={obj.name} />

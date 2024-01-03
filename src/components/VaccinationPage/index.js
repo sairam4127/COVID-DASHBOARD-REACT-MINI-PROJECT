@@ -1,23 +1,30 @@
+import {Link} from 'react-router-dom'
+import Header from '../Header'
+import Footer from '../Footer'
+
 import './index.css'
 
-import {Link} from 'react-router-dom'
-
 const VaccinationPage = () => (
-  <div className="notfound-page-container black-bg">
-    <div className="notfound-page-content-container">
-      <img
-        src="https://res.cloudinary.com/dawykjhkh/image/upload/v1671202044/under-construction_tbg0v9.jpg"
-        alt="not-found-pic"
-        className="under-contruction-img"
-      />
-
+  <>
+    <Header />
+    <div className="vaccination-page-main-bg">
+      <div className="about-content-container">
+        <h1 className="about-title">Vaccination</h1>
+        <p className="about-description">Last update on January 2024.</p>
+        <p className="about-vaccine-title">All Details About COVID-19</p>
+        <p className="about-vaccine-title">
+          Sorry, This page is Under Construction
+        </p>
+      </div>{' '}
       <Link to="/">
         <button className="not-found-button" type="button">
           Home
         </button>
       </Link>
     </div>
-  </div>
+
+    <Footer />
+  </>
 )
 
 export default VaccinationPage

@@ -247,7 +247,9 @@ class Home extends Component {
 
     return (
       <>
-        <div className="stats-block-column" testid="countryWideConfirmedCases">
+        <div
+          className="stats-block-column" // testid="countryWideConfirmedCases"
+        >
           <p className="stats-title red">Confirmed</p>
           <img
             src="https://res.cloudinary.com/dawykjhkh/image/upload/v1670669719/check-mark_1checkmark_gn1drl.png"
@@ -257,7 +259,9 @@ class Home extends Component {
           <p className="stats-number red">{totalConfirmedCases}</p>
         </div>
 
-        <div className="stats-block-column" testid="countryWideActiveCases">
+        <div
+          className="stats-block-column" // testid="countryWideActiveCases"
+        >
           <p className="stats-title blue">Active</p>
           <img
             src="https://res.cloudinary.com/dawykjhkh/image/upload/v1670669719/protection_1protection_image_tvwph1.png"
@@ -267,7 +271,9 @@ class Home extends Component {
           <p className="stats-number blue">{totalActiveCases}</p>
         </div>
 
-        <div className="stats-block-column" testid="countryWideRecoveredCases">
+        <div
+          className="stats-block-column" // testid="countryWideRecoveredCases"
+        >
           <p className="stats-title green">Recovered</p>
           <img
             src="https://res.cloudinary.com/dawykjhkh/image/upload/v1670669719/recovered_1recovered_img_h9h3uh.png"
@@ -277,7 +283,9 @@ class Home extends Component {
           <p className="stats-number green">{totalRecoveredCases}</p>
         </div>
 
-        <div className="stats-block-column" testid="countryWideDeceasedCases">
+        <div
+          className="stats-block-column" // testid="countryWideDeceasedCases"
+        >
           <p className="stats-title gray">Deceased</p>
           <img
             src="https://res.cloudinary.com/dawykjhkh/image/upload/v1670669719/breathing_1breathing_image_duhiky.png"
@@ -291,7 +299,9 @@ class Home extends Component {
   }
 
   renderLoadingView = () => (
-    <div className=" loader-container" testid="homeRouteLoader">
+    <div
+      className=" loader-container" // testid="homeRouteLoader"
+    >
       <Loader type="Oval" color="#007BFF" height="50" width="50" />
     </div>
   )
@@ -321,7 +331,7 @@ class Home extends Component {
     return (
       <div
         className="state-wise-stats-container"
-        testid="stateWiseCovidDataTable"
+        // testid="stateWiseCovidDataTable"
       >
         <div className="state-wise-states-table">
           <div className="table-header">
@@ -332,7 +342,7 @@ class Home extends Component {
                 type="button"
                 onClick={this.sortInAscendingOrder}
                 title="click to sort in ascending order"
-                testid="ascendingSort"
+                // testid="ascendingSort"
               >
                 {}
                 <FcGenericSortingAsc className="sort-icon" />
@@ -343,7 +353,7 @@ class Home extends Component {
                 type="button"
                 onClick={this.sortInDescendingOrder}
                 title="click to sort in descending order"
-                testid="descendingSort"
+                //  testid="descendingSort"
               >
                 {}
                 <FcGenericSortingDesc className="sort-icon" />
@@ -401,7 +411,7 @@ class Home extends Component {
     return (
       <ul
         className="search-result-container"
-        testid="searchResultsUnorderedList"
+        //  testid="searchResultsUnorderedList"
       >
         {filteredSearchSuggestions.map(each => (
           <SearchSuggestionsItem key={each.state_code} stateDetails={each} />

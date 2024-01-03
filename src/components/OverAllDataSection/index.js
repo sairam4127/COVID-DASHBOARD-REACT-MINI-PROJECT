@@ -51,7 +51,8 @@ const OverAllDataSection = props => {
           onClick={setCategoryConfirmed}
           key="state-specific-Confirmed"
         >
-          <div testid="stateSpecificConfirmedCasesContainer">
+          <div // testid="stateSpecificConfirmedCasesContainer"
+          >
             <p className="stats-title">Confirmed</p>
             <img
               src="https://res.cloudinary.com/dawykjhkh/image/upload/v1670669719/check-mark_1checkmark_gn1drl.png"
@@ -66,7 +67,8 @@ const OverAllDataSection = props => {
           onClick={setCategoryActive}
           key="state-specific-Active"
         >
-          <div testid="stateSpecificActiveCasesContainer">
+          <div //  testid="stateSpecificActiveCasesContainer"
+          >
             <p className="stats-title">Active</p>
             <img
               src="https://res.cloudinary.com/dawykjhkh/image/upload/v1670669719/protection_1protection_image_tvwph1.png"
@@ -81,7 +83,8 @@ const OverAllDataSection = props => {
           onClick={setCategoryRecovered}
           key="state-specific-Recovered"
         >
-          <div testid="stateSpecificRecoveredCasesContainer">
+          <div // testid="stateSpecificRecoveredCasesContainer"
+          >
             <p className="stats-title">Recovered</p>
             <img
               src="https://res.cloudinary.com/dawykjhkh/image/upload/v1670669719/recovered_1recovered_img_h9h3uh.png"
@@ -96,7 +99,8 @@ const OverAllDataSection = props => {
           onClick={setCategoryDeceased}
           key="state-specific-Deceased"
         >
-          <div testid="stateSpecificDeceasedCasesContainer">
+          <div // testid="stateSpecificDeceasedCasesContainer"
+          >
             <p className="stats-title">Deceased</p>
             <img
               src="https://res.cloudinary.com/dawykjhkh/image/upload/v1670669719/breathing_1breathing_image_duhiky.png"

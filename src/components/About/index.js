@@ -23,7 +23,7 @@ class About extends Component {
   }
 
   renderLoadingView = () => (
-    <div className=" loader-container" testid="aboutRouteLoader">
+    <div className=" loader-container" /* testid="aboutRouteLoader" */>
       <Loader type="Oval" color="#007BFF" height="50" width="50" />
     </div>
   )
@@ -32,7 +32,7 @@ class About extends Component {
     const {faqData} = this.state
     return (
       <>
-        <ul className="faqs-list" testid="faqsUnorderedList">
+        <ul className="faqs-list" /* testid="faqsUnorderedList" */>
           {faqData.map(obj => (
             <FaqItem
               key={obj.qno}

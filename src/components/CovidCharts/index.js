@@ -17,7 +17,9 @@ class CovidCharts extends Component {
   }
 
   renderLoadingView = () => (
-    <div testid="timelinesDataLoader" className=" loader-container">
+    <div // testid="timelinesDataLoader"
+      className="loader-container"
+    >
       <Loader type="Oval" color="#007BFF" height="50" width="50" />
     </div>
   )
@@ -116,7 +118,9 @@ class CovidCharts extends Component {
         </div>
 
         <h1 className="charts-title">Daily Spread Trends</h1>
-        <div className="barcharts-container" testid="lineChartsContainer">
+        <div
+          className="barcharts-container" // testid="lineChartsContainer"
+        >
           <div className="charts confirmed-background">
             <LineChartItem
               dataType="confirmed"
